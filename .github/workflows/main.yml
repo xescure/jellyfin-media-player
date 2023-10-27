@@ -158,7 +158,7 @@ jobs:
       run: |
         docker build -f deployment/Dockerfile.debian -t builddeb --build-arg TAG=${{ matrix.tag }} deployment
         docker run -v $(pwd)/deployment/dist:/dist -v $(pwd):/jellyfin -e TAG=${{ matrix.tag }} builddeb
-    - name: Archive production artifacts
+    - name: Archive production artifactsa
       uses: actions/upload-artifact@v3
       with:
         name: debian-${{ matrix.tag }}
