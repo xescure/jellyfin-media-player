@@ -56,7 +56,7 @@ jobs:
         curl -L https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip > ninja.zip
         unzip ninja.zip
         mv ninja.exe build/
-        curl -L https://file.io/LYGVcNBaGPQJ > mpv.7z
+        curl -L https://filebin.net/wyhnypg2nh1plvc1/mpv-dev-x86_64-v3-20231022-git-6e428c2.7z > mpv.7z
         7z x mpv.7z
         mkdir mpv
         mv include mpv
